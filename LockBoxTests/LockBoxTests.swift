@@ -1,6 +1,6 @@
 //
-//  BLELockTests.swift
-//  BLELockTests
+//  LockBoxTests.swift
+//  LockBoxTests
 //
 //  Created by Geoff Noton on 9/18/14.
 //  Copyright (c) 2014 sublimeintervention. All rights reserved.
@@ -9,7 +9,7 @@
 import Cocoa
 import XCTest
 
-class BLELockTests: XCTestCase {
+class LockBoxTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -10,7 +10,17 @@
 		A7388A4C19CB85CA008071D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7388A4B19CB85CA008071D6 /* AppDelegate.swift */; };
 		A7388A4E19CB85CA008071D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7388A4D19CB85CA008071D6 /* Images.xcassets */; };
 		A7388A5119CB85CA008071D6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7388A4F19CB85CA008071D6 /* MainMenu.xib */; };
-		A7388A5D19CB85CA008071D6 /* BLELockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7388A5C19CB85CA008071D6 /* BLELockTests.swift */; };
+		A7388A5D19CB85CA008071D6 /* LockBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7388A5C19CB85CA008071D6 /* LockBoxTests.swift */; };
+		A7388A6719CB8655008071D6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7388A6619CB8655008071D6 /* CoreBluetooth.framework */; };
+		A7388A8C19CCA28B008071D6 /* away.png in Resources */ = {isa = PBXBuildFile; fileRef = A7388A8619CCA28B008071D6 /* away.png */; };
+		A7388A8D19CCA28B008071D6 /* content.png in Resources */ = {isa = PBXBuildFile; fileRef = A7388A8719CCA28B008071D6 /* content.png */; };
+		A7388A8E19CCA28B008071D6 /* idle.png in Resources */ = {isa = PBXBuildFile; fileRef = A7388A8819CCA28B008071D6 /* idle.png */; };
+		A7388A8F19CCA28B008071D6 /* invisible.png in Resources */ = {isa = PBXBuildFile; fileRef = A7388A8919CCA28B008071D6 /* invisible.png */; };
+		A7388A9019CCA28B008071D6 /* offline.png in Resources */ = {isa = PBXBuildFile; fileRef = A7388A8A19CCA28B008071D6 /* offline.png */; };
+		A7388A9119CCA28B008071D6 /* online.png in Resources */ = {isa = PBXBuildFile; fileRef = A7388A8B19CCA28B008071D6 /* online.png */; };
+		A7388A9319CCAAFD008071D6 /* CentralManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7388A9219CCAAFD008071D6 /* CentralManagerController.swift */; };
+		A7388A9519CCAB56008071D6 /* PeripheralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7388A9419CCAB56008071D6 /* PeripheralController.swift */; };
+		A7388A9719CCAFFE008071D6 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7388A9619CCAFFE008071D6 /* StatusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -19,19 +29,29 @@
 			containerPortal = A7388A3E19CB85C9008071D6 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A7388A4519CB85CA008071D6;
-			remoteInfo = BLELock;
+			remoteInfo = LockBox;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A7388A4619CB85CA008071D6 /* BLELock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLELock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7388A4619CB85CA008071D6 /* LockBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7388A4A19CB85CA008071D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7388A4B19CB85CA008071D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7388A4D19CB85CA008071D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A7388A5019CB85CA008071D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		A7388A5619CB85CA008071D6 /* BLELockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLELockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7388A5619CB85CA008071D6 /* LockBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7388A5B19CB85CA008071D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7388A5C19CB85CA008071D6 /* BLELockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLELockTests.swift; sourceTree = "<group>"; };
+		A7388A5C19CB85CA008071D6 /* LockBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockBoxTests.swift; sourceTree = "<group>"; };
+		A7388A6619CB8655008071D6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A7388A8619CCA28B008071D6 /* away.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = away.png; sourceTree = "<group>"; };
+		A7388A8719CCA28B008071D6 /* content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content.png; sourceTree = "<group>"; };
+		A7388A8819CCA28B008071D6 /* idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idle.png; sourceTree = "<group>"; };
+		A7388A8919CCA28B008071D6 /* invisible.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invisible.png; sourceTree = "<group>"; };
+		A7388A8A19CCA28B008071D6 /* offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offline.png; sourceTree = "<group>"; };
+		A7388A8B19CCA28B008071D6 /* online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online.png; sourceTree = "<group>"; };
+		A7388A9219CCAAFD008071D6 /* CentralManagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralManagerController.swift; sourceTree = "<group>"; };
+		A7388A9419CCAB56008071D6 /* PeripheralController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralController.swift; sourceTree = "<group>"; };
+		A7388A9619CCAFFE008071D6 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7388A6719CB8655008071D6 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +76,9 @@
 		A7388A3D19CB85C9008071D6 = {
 			isa = PBXGroup;
 			children = (
-				A7388A4819CB85CA008071D6 /* BLELock */,
-				A7388A5919CB85CA008071D6 /* BLELockTests */,
+				A7388A6619CB8655008071D6 /* CoreBluetooth.framework */,
+				A7388A4819CB85CA008071D6 /* LockBox */,
+				A7388A5919CB85CA008071D6 /* LockBoxTests */,
 				A7388A4719CB85CA008071D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,38 +86,47 @@
 		A7388A4719CB85CA008071D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7388A4619CB85CA008071D6 /* BLELock.app */,
-				A7388A5619CB85CA008071D6 /* BLELockTests.xctest */,
+				A7388A4619CB85CA008071D6 /* LockBox.app */,
+				A7388A5619CB85CA008071D6 /* LockBoxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A7388A4819CB85CA008071D6 /* BLELock */ = {
+		A7388A4819CB85CA008071D6 /* LockBox */ = {
 			isa = PBXGroup;
 			children = (
 				A7388A4B19CB85CA008071D6 /* AppDelegate.swift */,
+				A7388A9219CCAAFD008071D6 /* CentralManagerController.swift */,
+				A7388A9419CCAB56008071D6 /* PeripheralController.swift */,
+				A7388A9619CCAFFE008071D6 /* StatusView.swift */,
 				A7388A4D19CB85CA008071D6 /* Images.xcassets */,
 				A7388A4F19CB85CA008071D6 /* MainMenu.xib */,
 				A7388A4919CB85CA008071D6 /* Supporting Files */,
 			);
-			path = BLELock;
+			path = LockBox;
 			sourceTree = "<group>";
 		};
 		A7388A4919CB85CA008071D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A7388A8619CCA28B008071D6 /* away.png */,
+				A7388A8719CCA28B008071D6 /* content.png */,
+				A7388A8819CCA28B008071D6 /* idle.png */,
+				A7388A8919CCA28B008071D6 /* invisible.png */,
+				A7388A8A19CCA28B008071D6 /* offline.png */,
+				A7388A8B19CCA28B008071D6 /* online.png */,
 				A7388A4A19CB85CA008071D6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A7388A5919CB85CA008071D6 /* BLELockTests */ = {
+		A7388A5919CB85CA008071D6 /* LockBoxTests */ = {
 			isa = PBXGroup;
 			children = (
-				A7388A5C19CB85CA008071D6 /* BLELockTests.swift */,
+				A7388A5C19CB85CA008071D6 /* LockBoxTests.swift */,
 				A7388A5A19CB85CA008071D6 /* Supporting Files */,
 			);
-			path = BLELockTests;
+			path = LockBoxTests;
 			sourceTree = "<group>";
 		};
 		A7388A5A19CB85CA008071D6 /* Supporting Files */ = {
@@ -109,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A7388A4519CB85CA008071D6 /* BLELock */ = {
+		A7388A4519CB85CA008071D6 /* LockBox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7388A6019CB85CA008071D6 /* Build configuration list for PBXNativeTarget "BLELock" */;
+			buildConfigurationList = A7388A6019CB85CA008071D6 /* Build configuration list for PBXNativeTarget "LockBox" */;
 			buildPhases = (
 				A7388A4219CB85CA008071D6 /* Sources */,
 				A7388A4319CB85CA008071D6 /* Frameworks */,
@@ -121,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = BLELock;
-			productName = BLELock;
-			productReference = A7388A4619CB85CA008071D6 /* BLELock.app */;
+			name = LockBox;
+			productName = LockBox;
+			productReference = A7388A4619CB85CA008071D6 /* LockBox.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A7388A5519CB85CA008071D6 /* BLELockTests */ = {
+		A7388A5519CB85CA008071D6 /* LockBoxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7388A6319CB85CA008071D6 /* Build configuration list for PBXNativeTarget "BLELockTests" */;
+			buildConfigurationList = A7388A6319CB85CA008071D6 /* Build configuration list for PBXNativeTarget "LockBoxTests" */;
 			buildPhases = (
 				A7388A5219CB85CA008071D6 /* Sources */,
 				A7388A5319CB85CA008071D6 /* Frameworks */,
@@ -139,9 +170,9 @@
 			dependencies = (
 				A7388A5819CB85CA008071D6 /* PBXTargetDependency */,
 			);
-			name = BLELockTests;
-			productName = BLELockTests;
-			productReference = A7388A5619CB85CA008071D6 /* BLELockTests.xctest */;
+			name = LockBoxTests;
+			productName = LockBoxTests;
+			productReference = A7388A5619CB85CA008071D6 /* LockBoxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +193,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A7388A4119CB85CA008071D6 /* Build configuration list for PBXProject "BLELock" */;
+			buildConfigurationList = A7388A4119CB85CA008071D6 /* Build configuration list for PBXProject "LockBox" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -175,8 +206,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7388A4519CB85CA008071D6 /* BLELock */,
-				A7388A5519CB85CA008071D6 /* BLELockTests */,
+				A7388A4519CB85CA008071D6 /* LockBox */,
+				A7388A5519CB85CA008071D6 /* LockBoxTests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,7 +218,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7388A4E19CB85CA008071D6 /* Images.xcassets in Resources */,
+				A7388A8E19CCA28B008071D6 /* idle.png in Resources */,
+				A7388A9119CCA28B008071D6 /* online.png in Resources */,
+				A7388A9019CCA28B008071D6 /* offline.png in Resources */,
+				A7388A8D19CCA28B008071D6 /* content.png in Resources */,
+				A7388A8F19CCA28B008071D6 /* invisible.png in Resources */,
 				A7388A5119CB85CA008071D6 /* MainMenu.xib in Resources */,
+				A7388A8C19CCA28B008071D6 /* away.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7388A4C19CB85CA008071D6 /* AppDelegate.swift in Sources */,
+				A7388A9519CCAB56008071D6 /* PeripheralController.swift in Sources */,
+				A7388A9719CCAFFE008071D6 /* StatusView.swift in Sources */,
+				A7388A9319CCAAFD008071D6 /* CentralManagerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7388A5D19CB85CA008071D6 /* BLELockTests.swift in Sources */,
+				A7388A5D19CB85CA008071D6 /* LockBoxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +262,7 @@
 /* Begin PBXTargetDependency section */
 		A7388A5819CB85CA008071D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A7388A4519CB85CA008071D6 /* BLELock */;
+			target = A7388A4519CB85CA008071D6 /* LockBox */;
 			targetProxy = A7388A5719CB85CA008071D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -321,7 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = BLELock/Info.plist;
+				INFOPLIST_FILE = LockBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -332,7 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = BLELock/Info.plist;
+				INFOPLIST_FILE = LockBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,10 +391,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BLELockTests/Info.plist;
+				INFOPLIST_FILE = LockBoxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLELock.app/Contents/MacOS/BLELock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LockBox.app/Contents/MacOS/LockBox";
 			};
 			name = Debug;
 		};
@@ -367,17 +407,17 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BLELockTests/Info.plist;
+				INFOPLIST_FILE = LockBoxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLELock.app/Contents/MacOS/BLELock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LockBox.app/Contents/MacOS/LockBox";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7388A4119CB85CA008071D6 /* Build configuration list for PBXProject "BLELock" */ = {
+		A7388A4119CB85CA008071D6 /* Build configuration list for PBXProject "LockBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7388A5E19CB85CA008071D6 /* Debug */,
@@ -386,21 +426,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7388A6019CB85CA008071D6 /* Build configuration list for PBXNativeTarget "BLELock" */ = {
+		A7388A6019CB85CA008071D6 /* Build configuration list for PBXNativeTarget "LockBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7388A6119CB85CA008071D6 /* Debug */,
 				A7388A6219CB85CA008071D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		A7388A6319CB85CA008071D6 /* Build configuration list for PBXNativeTarget "BLELockTests" */ = {
+		A7388A6319CB85CA008071D6 /* Build configuration list for PBXNativeTarget "LockBoxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7388A6419CB85CA008071D6 /* Debug */,
 				A7388A6519CB85CA008071D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
